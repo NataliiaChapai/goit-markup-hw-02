@@ -7,6 +7,7 @@
   --tertiary-text-color: #ffffff;
   --background-color: #e5e5e5;
   --background-btn-color: #f5f4fa;
+  --main-background-color: #ffffff;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -37,7 +38,7 @@ button {
 /* ----------------------ШАПКА САЙТУ--------------------*/
 
 .header {
-  background-color: #ffffff;
+  background-color: var(--main-background-color);
 }
 .logo {
   font-family: Raleway, sans-serif;
@@ -100,21 +101,16 @@ button {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--main-text-color);
-  background-color: var(--background-btn-color);
+  color: var(--tertiary-text-color);
+  background-color: var(--accent-color);
   cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--accent-color);
-  color: var(--tertiary-text-color);
+  background-color: #188ce8;
 }
 /* ----------------------ОСОБЛИВОСТІ--------------------*/
-
-.features {
-  background-color: var(--background-color);
-}
 
 .features-list-title {
   font-weight: bold;
@@ -130,7 +126,7 @@ button {
 /*------------------------ПРИКЛАДИ РОБІТ-----------------------*/
 
 .products {
-  background-color: var(--background-color);
+  background-color: var(--main-background-color);
 }
 
 .products-title {
@@ -144,6 +140,17 @@ button {
 
 .team {
   background-color: #f5f4fa;
+}
+
+.team-list-item {
+  background-color: var(--main-background-color);
+}
+
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 .team-list-title {
@@ -197,10 +204,6 @@ button {
 }
 
 /*----------------------НАШІ ПРОЕКТИ-----------------------*/
-
-.filter {
-  background-color: var(--background-color);
-}
 
 .filter-btm {
   font-family: inherit;
